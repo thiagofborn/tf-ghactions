@@ -8,7 +8,15 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c ". /usr/local/share/nv
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-     && apt-get -y install --no-install-recommends tmux
+     && apt-get -y install --no-install-recommends wget unzip tmux
+
+# Download and setup Terraform
+RUN wget --quiet https://releases.hashicorp.com/terraform/1.0.5/terraform_1.0.5_linux_amd64.zip \
+    && unzip terraform_1.0.5_linux_amd64.zip \
+    && mv terraform /usr/local/bin \
+    && rm terraform_1.0.5_linux_amd64.zip
+
+# Import Azure State
 
 # [Optional] Uncomment the next line to use go get to install anything else you need
 # RUN go get -x <your-dependency-or-tool>
