@@ -2,7 +2,7 @@
 
 ## Target Audience
 
-People are interested in DevOps culture and would like to create Infrastructure as Code (IaC).
+People interested in DevOps culture and would like to create Infrastructure as Code (IaC).
 
 ## Abstract
 ### VS Code as a dev-container for smart-provisioning
