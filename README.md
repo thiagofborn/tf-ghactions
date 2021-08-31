@@ -9,7 +9,13 @@ People interested in DevOps culture and would like to create Infrastructure as C
 
 The idea is to create an common environment to a team. In short, a development container is created with all the tools necessary to share Terraform templates across a DevOps team.
 
+## Pre-requisite
+
+You must have [Docker](https://www.docker.com/) installed on your local machine.
+
 ## Hands-on session
+
+Download VS Code, then from **VS Code:** _Git: Clone_ utility, you will clone the repository. After that, **VS Code:** will pop-up to **Reopen in Container**. Do it, and wait to the container image to be deployed. 
 
 ## Service and related products
 
