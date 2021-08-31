@@ -19,9 +19,15 @@ The idea is to create an common environment to a team. In short, a development c
 
 ## Golang
 
+
+
 ## Terraform 
 
+The dev-container has the Terraform binary installed.
+
 ## VS Code 
+
+The process installs some **VS Code Extensions** to save time for the team.
 
 Extensions:
 - golang.Go
